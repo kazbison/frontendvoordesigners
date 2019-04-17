@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+/*header*/
+
+header {
+    background: #000;
+}
+
+header nav {
+    display: inline;
+    float: right;
+}
+
+header a {
+    text-decoration: none;
+    display: inline;
+}
+
+
+article {
+    display: inline-block;
+    width: 200px;
+}
+
+article footer p {
+    float: right;
+}
+
+article footer p:first-child {
+    float: left;
+}
+
+article h2 {
+    text-align: center;
+}
+
+article a {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}

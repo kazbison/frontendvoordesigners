@@ -9,11 +9,13 @@ body {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
     font-weight: 300;
+    padding: 1rem;
 }
 
 
 /*header*/
 
+/*
 header {
     background-color: #fff;
     box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.20);
@@ -21,7 +23,8 @@ header {
     position: fixed;
     padding: 0.5rem;
     height: 3rem;
-    width: 100%;
+    margin-left: -1rem;
+    width: 100vw;
 }
 
 .container {
@@ -52,6 +55,7 @@ header a {
 #favorieten::before {
     content: url('/images/heart.svg');
 }
+*/
 
 
 /*Filmlijst*/
@@ -100,6 +104,47 @@ article img {
     visibility: hidden;
 }
 
+
+
+
+
+
+/* Hartje animaties */
+
+.niet_toegevoegd_aan_favorieten {
+    fill: rgba(0, 0, 0, 0.50);
+    height: 2rem;
+    position: relative;
+    margin-top: -1rem;
+    margin-left: 75%;
+    transition: all .2s ease-in-out;
+}
+
+.toegevoegd_aan_favorieten {
+    fill: #f00;
+    height: 2rem;
+    position: relative;
+    margin-top: -1rem;
+    margin-left: 75%;
+    animation: hartje-animatie .4s ease-in-out;
+}
+
+@keyframes hartje-animatie {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    75% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 .hartje {
     visibility: visible;
     display: block;
@@ -108,6 +153,15 @@ article img {
     margin-top: -1rem;
     margin-left: 7rem;
 }
+
+/* Einde hartje animaties */
+
+
+
+
+
+/* Film covers */
+
 
 #the_mule div {
     background-image: url(/images/the_mule.jpg);
@@ -143,7 +197,7 @@ article img {
 }
 
 #avengers div {
-    background-image: url(/images//Avengers_Endgame.jpg);
+    background-image: url(/images/Avengers_Endgame.jpg);
     background-color: #cccccc;
     /* Used if the image is unavailable */
     height: 20rem;
@@ -151,4 +205,41 @@ article img {
     background-repeat: no-repeat;
     background-size: cover;
     /* Resize the background image to cover the entire container */
+}
+
+
+
+
+
+#bohemian_rhapsody div {
+    background-image: url(/images/bohemian_rhapsody.jpg);
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 20rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+#split div {
+    background-image: url(/images/split.jpg);
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 20rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+/* Einde film covers */
+
+
+@media (min-width: 42rem) {
+
+    article:first-of-type {
+        grid-column: auto / span 2;
+    }
+
 }

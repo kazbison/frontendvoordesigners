@@ -2,14 +2,13 @@
 /*eslint-env browser*/
 /*eslint 'no-console': 0*/
 
-var hartje = document.querySelectorAll(".hartje");
+var hartje = document.querySelectorAll("svg");
 var aantalHartjes = hartje.length;
 console.log(aantalHartjes);
 
-
 var favorieten = document.querySelector("#aantal_favorieten");
-//var aantalFavorieten = document.querySelector(".favoriet").length;
-var aantalFavorieten = 0;
+var aantalFavorieten = document.querySelector(".toegevoegd_aan_favorieten");
+aantalFavorieten = 0;
 
 
 
@@ -18,15 +17,15 @@ function klik() {
 
     //console.log(this.src);
 
-    if (!this.src.includes("niet_toegevoegd.svg")) {
+    if (!this.classList.contains("niet_toegevoegd_aan_favorieten")) {
         console.log('verwijderd');
-        this.src = '../images/niet_toegevoegd.svg';
-        //        hartje.removeClass("favoriet");
+        this.classList.remove("toegevoegd_aan_favorieten");
+        this.classList.add("niet_toegevoegd_aan_favorieten");
 
     } else {
         console.log('toegevoegd');
-        this.src = '../images/toegevoegd.svg';
-        //        hartje.addClass("favoriet");
+        this.classList.remove("niet_toegevoegd_aan_favorieten");
+        this.classList.add("toegevoegd_aan_favorieten");
 
     }
 }

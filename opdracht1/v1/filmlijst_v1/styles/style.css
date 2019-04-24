@@ -17,6 +17,7 @@ body {
 header {
     background-color: #fff;
     box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.20);
+    overflow: hidden;
     position: fixed;
     padding: 0.5rem;
     height: 3rem;
@@ -130,8 +131,19 @@ article img {
     /* Resize the background image to cover the entire container */
 }
 
-#cold_pursuit {
+#cold_pursuit div {
     background-image: url(/images/Cold_Pursuit.jpg);
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 20rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+#avengers div {
+    background-image: url(/images//Avengers_Endgame.jpg);
     background-color: #cccccc;
     /* Used if the image is unavailable */
     height: 20rem;

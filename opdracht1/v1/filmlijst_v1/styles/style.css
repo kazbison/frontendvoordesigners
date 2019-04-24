@@ -4,6 +4,7 @@
 }
 
 body {
+    background: #f1f1f1;
     color: #000;
     font-family: 'Arial', sans-serif;
     font-size: 16px;
@@ -14,41 +15,128 @@ body {
 /*header*/
 
 header {
-    background: #000;
+    background-color: #fff;
+    box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.20);
+    position: fixed;
+    padding: 0.5rem;
+    height: 3rem;
+    width: 100%;
 }
 
-header nav {
-    display: inline;
-    float: right;
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    max-width: calc(83rem + (2 * 0.5rem));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+header a img {
+    height: 100%;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-left: -65rem;
 }
 
 header a {
+    color: #000;
     text-decoration: none;
-    display: inline;
+}
+
+#favorieten::before {
+    content: url('/images/heart.svg');
 }
 
 
+/*Filmlijst*/
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-gap: 1rem;
+    margin: auto auto;
+    max-width: 83rem;
+}
+
 article {
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.20);
     display: inline-block;
-    width: 200px;
+    height: 30rem;
+    width: 1fr;
+    text-align: center;
+}
+
+article footer {
+    padding: 0.5rem;
 }
 
 article footer p {
-    float: right;
-}
-
-article footer p:first-child {
     float: left;
 }
 
+article footer p:last-child {
+    float: right;
+}
+
+article footer p:last-child::before {
+    content: url('/images/clock.svg');
+}
+
 article h2 {
-    text-align: center;
+    margin-top: 2rem;
+    position: relative;
 }
 
-article a {
-    text-align: center;
-}
-
-img {
+article img {
     width: 100%;
+    height: 20rem;
+    visibility: hidden;
+}
+
+.hartje {
+    visibility: visible;
+    display: block;
+    height: 2rem;
+    position: relative;
+    margin-top: -1rem;
+    margin-left: 7rem;
+}
+
+#the_mule div {
+    background-image: url(/images/the_mule.jpg);
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 20rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+#clovehitch div {
+    background-image: url(/images/the_clovehitch_killer.jpg);
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 20rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+#cold_pursuit {
+    background-image: url(/images/Cold_Pursuit.jpg);
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 20rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
 }

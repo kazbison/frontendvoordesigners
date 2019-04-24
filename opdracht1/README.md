@@ -8,6 +8,8 @@ Ik heb een website gemaakt met een lijst van films. Als je een leuke film hebt g
 
 Je kan ook een link plaatsen naar de bron code van de demo:
 
-[Code demo 1 voor opdracht 1](https://github.com/KoopReynders/frontendvoordesigners/blob/master/opdracht1/v1/)
+[Code demo 1 voor opdracht 1](https://github.com/kazbison/frontendvoordesigners/blob/master/opdracht1/v1/)
 
-https://kazbison.github.io/frontendvoordesigners/opdracht1/v1/
+(https://github.com/KoopReynders/frontendvoordesigners/blob/master/opdracht1/v1/)
+
+https://github.com/kazbison/frontendvoordesigners/opdracht1/v1/index.html

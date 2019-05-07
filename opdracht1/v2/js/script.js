@@ -15,7 +15,7 @@ var aantalFavorieten = document.querySelectorAll(".toegevoegd_aan_favorieten").l
 
 //function updateAantalFavorieten(plusOfMinFavoriet) {
 //
-//    aantalFavorieten += plusOfMinFavoriet; // staat ook wel gelijk aan score = score + punten
+//    aantalFavorieten += plusOfMinFavoriet;
 //
 //}
 

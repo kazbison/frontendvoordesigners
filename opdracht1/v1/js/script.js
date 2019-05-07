@@ -4,12 +4,6 @@
 
 var hartje = document.querySelectorAll(".hartje");
 var aantalHartjes = hartje.length;
-console.log(aantalHartjes);
-
-
-var favorieten = document.querySelector("#aantal_favorieten");
-//var aantalFavorieten = document.querySelector(".favoriet").length;
-var aantalFavorieten = 0;
 
 
 
@@ -36,5 +30,3 @@ function klik() {
 for (var i = 0; i < aantalHartjes; i++) {
     hartje[i].addEventListener('click', klik, false);
 }
-
-favorieten.textContent = ' (' + aantalFavorieten + ')';

@@ -4,28 +4,22 @@
 
 var hartje = document.querySelectorAll("svg");
 var aantalHartjes = hartje.length;
-console.log(aantalHartjes);
-
 var favorieten = document.querySelector("#aantal_favorieten");
-
-//var favorieten = document.getElementByld("aantal_favorieten")
-//var aantalFavorieten = 0;
-var aantalFavorieten = document.querySelectorAll(".toegevoegd_aan_favorieten").length;
+var aantalFavorieten = 0;
 
 
-//function updateAantalFavorieten(plusOfMinFavoriet) {
-//
-//    aantalFavorieten += plusOfMinFavoriet;
-//
-//}
+function hoeveelFavsZijnEr() {
 
+    aantalFavorieten = document.querySelectorAll(".toegevoegd_aan_favorieten").length;
+
+    favorieten.textContent = ' (' + aantalFavorieten + ')';
+
+}
 
 
 for (var i = 0; i < aantalHartjes; i++) {
 
     hartje[i].addEventListener('click', function klik() {
-
-        //console.log(this.src);
 
         if (!this.classList.contains("niet_toegevoegd_aan_favorieten")) {
 
@@ -34,8 +28,6 @@ for (var i = 0; i < aantalHartjes; i++) {
             this.classList.remove("toegevoegd_aan_favorieten");
             this.classList.add("niet_toegevoegd_aan_favorieten");
 
-            //updateAantalFavorieten(-1);
-
         } else {
 
             console.log('toegevoegd');
@@ -43,14 +35,9 @@ for (var i = 0; i < aantalHartjes; i++) {
             this.classList.remove("niet_toegevoegd_aan_favorieten");
             this.classList.add("toegevoegd_aan_favorieten");
 
-            //updateAantalFavorieten(1);
-
         }
+
+        hoeveelFavsZijnEr();
+
     }, false);
 }
-
-
-
-
-favorieten.textContent = ' (' + aantalFavorieten + ')';
-console.log(aantalFavorieten);

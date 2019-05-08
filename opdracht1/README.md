@@ -16,12 +16,12 @@ Ik heb een website gemaakt met een lijst van films. Als je een leuke film hebt g
 
 ## Versie 2
 
-[Versie 2 demo](https://kazbison.github.io/frontendvoordesigners/opdracht1/v1/)
+[Versie 2 demo](https://kazbison.github.io/frontendvoordesigners/opdracht1/v2/)
 
 * Beter zichtbaar hartje
 * Versterkte interactie door een microanimatie na op het hartje te klikken
+* D.m.v. javascript het aantal films te tellen die zijn 'opgeslagen'
 
 ### Geprobeerd
 
-* D.m.v. javascript het aantal films te tellen die zijn 'opgeslagen'
 * Een microanimatie te maken voor het hartje in de navigatiebalk die na de animatie van het hartje bij de film begint, zodat ook duidelijk is waar de film is terug te vinden

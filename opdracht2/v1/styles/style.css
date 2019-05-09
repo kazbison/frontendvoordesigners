@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fcf6f5;
+    color: #242724;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}

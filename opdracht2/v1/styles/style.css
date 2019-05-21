@@ -60,7 +60,7 @@ section:nth-of-type(4) {
 }
 
 section:nth-of-type(5) {
-    background: url(/images/suitwall-side.jpg) no-repeat;
+    background: url(/images/suitwall-side.jpg);
     background-position: center;
     background-size: cover;
 }

@@ -4,14 +4,111 @@
 }
 
 body {
-    background: #fcf6f5;
-    color: #242724;
+    background: #fff;
+    color: #000;
     font-family: 'Arial', sans-serif;
     font-size: 16px;
     font-weight: 300;
+    margin: 0;
+    padding: 0;
+    /*    Bron: https://www.youtube.com/watch?v=0Og_kQUsxEw    */
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 600;
 }
+
+
+/* Section */
+
+section {
+    padding: 7rem;
+    height: calc(100vh - 14rem);
+    width: calc(100vw -14rem);
+    scroll-snap-align: start;
+}
+
+
+section:nth-of-type(1) {
+    background: url(/images/ik_homepage.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+section:nth-of-type(2) {
+    color: #fff;
+    background: url(/images/nntumbnail.png);
+    background-position: center;
+    background-size: cover;
+}
+
+section:nth-of-type(3) {
+    background: url(/images/wildresidence-cover.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section:nth-of-type(4) {
+    background: url(/images/werkcollege_2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section:nth-of-type(5) {
+    background: url(/images/suitwall-side.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/*
+section img {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+*/
+
+section h1 {
+    font-size: 8rem;
+    margin-top: 8rem;
+}
+
+
+section h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+
+section p {
+    margin-bottom: 2rem;
+    width: 30rem;
+}
+
+section:first-child p {
+    width: 100%;
+}
+
+.button_case {
+    background-color: #000;
+    border-radius: 0.25rem;
+    color: #fff;
+    display: block;
+    margin-top: 20rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    width: 10rem;
+    text-decoration: none;
+}
+
+
+
+/* Einde section */

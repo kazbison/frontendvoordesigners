@@ -33,7 +33,7 @@ section {
 
 section:nth-of-type(1) {
     background: #000;
-    background: url(/images/ik_homepage.jpg);
+    background: url(../images/ik_homepage.jpg);
     background-position: center;
     background-size: cover;
     color: #fff;
@@ -42,25 +42,25 @@ section:nth-of-type(1) {
 
 section:nth-of-type(2) {
     color: #fff;
-    background: url(/images/nntumbnail.png);
+    background: url(../images/nntumbnail.png);
     background-position: center;
     background-size: cover;
 }
 
 section:nth-of-type(3) {
-    background: url(/images/wildresidence-cover.jpg);
+    background: url(../images/wildresidence-cover.jpg);
     background-position: center;
     background-size: cover;
 }
 
 section:nth-of-type(4) {
-    background: url(/images/werkcollege_2.jpg);
+    background: url(../images/werkcollege_2.jpg);
     background-position: center;
     background-size: cover;
 }
 
 section:nth-of-type(5) {
-    background: url(/images/suitwall-side.jpg);
+    background: url(../images/suitwall-side.jpg);
     background-position: center;
     background-size: cover;
 }

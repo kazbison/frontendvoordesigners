@@ -14,12 +14,12 @@ function klik() {
 
     if (!this.src.includes("niet_toegevoegd.svg")) {
         console.log('verwijderd');
-        this.src = '../images/niet_toegevoegd.svg';
+        this.src = './images/niet_toegevoegd.svg';
         //        hartje.removeClass("favoriet");
 
     } else {
         console.log('toegevoegd');
-        this.src = '../images/toegevoegd.svg';
+        this.src = './images/toegevoegd.svg';
         //        hartje.addClass("favoriet");
 
     }

@@ -65,7 +65,7 @@ header a {
 }
 
 #favorieten:before {
-    content: url('/images/heart.svg');
+    content: url('../images/heart.svg');
 }
 
 /*
@@ -112,7 +112,7 @@ article footer p:last-child {
 }
 
 article footer p:last-child:before {
-    content: url('/images/clock.svg');
+    content: url('../images/clock.svg');
 }
 
 article h2 {

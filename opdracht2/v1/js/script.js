@@ -3,17 +3,11 @@
 /*eslint 'no-console': 0*/
 
 /*
-
 Als ik op url met een id "1" of "geen id" ben ga dan naar id "2" d.m.v. drukken op "keycode 75"(K) en "keycode 39" (->)
-
 Als ik op url met een id "2" ben ga dan naar id "3" d.m.v. drukken op "keycode 75"(K) en "keycode 39" (->) en naar id "1" d.m.v. drukken op "keycode 74"(J) en "keycode 37" (<-)
-
 etc.
-
 etc.
-
 Als ik op url met een id "5" ben ga dan naar id "4" d.m.v. drukken op "keycode 74"(J) en "keycode 37" (<-)
-
 */
 
 

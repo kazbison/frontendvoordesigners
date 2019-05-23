@@ -50,7 +50,7 @@ header a {
 }
 
 #favorieten::before {
-    content: url('/images/heart.svg');
+    content: url('../images/heart.svg');
 }
 
 
@@ -86,7 +86,7 @@ article footer p:last-child {
 }
 
 article footer p:last-child::before {
-    content: url('/images/clock.svg');
+    content: url('../images/clock.svg');
 }
 
 article h2 {
@@ -110,7 +110,7 @@ article img {
 }
 
 #the_mule div {
-    background-image: url(/images/the_mule.jpg);
+    background-image: url(../images/the_mule.jpg);
     background-color: #cccccc;
     /* Used if the image is unavailable */
     height: 20rem;
@@ -121,7 +121,7 @@ article img {
 }
 
 #clovehitch div {
-    background-image: url(/images/the_clovehitch_killer.jpg);
+    background-image: url(../images/the_clovehitch_killer.jpg);
     background-color: #cccccc;
     /* Used if the image is unavailable */
     height: 20rem;
@@ -132,7 +132,7 @@ article img {
 }
 
 #cold_pursuit div {
-    background-image: url(/images/Cold_Pursuit.jpg);
+    background-image: url(../images/Cold_Pursuit.jpg);
     background-color: #cccccc;
     /* Used if the image is unavailable */
     height: 20rem;
@@ -143,7 +143,7 @@ article img {
 }
 
 #avengers div {
-    background-image: url(/images//Avengers_Endgame.jpg);
+    background-image: url(../images//Avengers_Endgame.jpg);
     background-color: #cccccc;
     /* Used if the image is unavailable */
     height: 20rem;

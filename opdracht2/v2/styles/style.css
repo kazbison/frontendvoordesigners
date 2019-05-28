@@ -33,6 +33,10 @@ section {
     height: calc(100vh - 14rem);
     width: calc(100vw -14rem);
     scroll-snap-align: start;
+    /*
+    will-change: transform;
+    transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    */
 }
 
 section:nth-of-type(1) {
@@ -71,11 +75,6 @@ section:nth-of-type(5) {
     background-position: center;
     background-size: cover;
 }
-
-/*
-tr:nth-child(even)
-tr:nth-child(odd)
-*/
 
 section h1 {
     font-size: 20vmin;

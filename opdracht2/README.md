@@ -11,9 +11,18 @@ Ik heb een portfolio website gemaakt met beeldvullende sections. Als je naar ben
 ### Verbeteringen die ik in versie 2 toe wil voegen
 
 * Langzame scroll wanneer ik op "J", "K", <- en -> klik
-* Social media toevoegen
+
+De langzame scroll werkt al d.m.v. css en voor pijltje naar boven en beneden. Maar er is nog geen langzame scroll voor de javascript events.
 
 
 ## Versie 2
 
 [Versie 2 demo](https://kazbison.github.io/frontendvoordesigners/opdracht2/v2/)
+
+* Stijl aangebracht aan de background image
+* Mooiere knop om naar de pagina van de case te gaan
+* Social media toegevoegd
+
+### Geprobeerd
+
+* Langzame scroll wanneer ik op "J", "K", <- en -> klik (Geprobeerd d.m.v. css en javascript, maar niet gelukt)

@@ -1,53 +1,54 @@
-/*var uri = "https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json";
-
-var section = document.querySelector('section');
-console.log("section", section);
-
-console.log("loadimagesmetXHR");
-var request = new XMLHttpRequest();
-request.open('get', uri);
-request.responseType = 'json';
-request.send();
-
-request.addEventListener("load", function () {
-    var data = request.response;
-    console.log("request is geladen: ", request.response);
-
-
-    //er is data
-    //nu kun je iets doen
-    section.textContent = JSON.stringify(data);
-
-});*/
-
-
-
 var uri = "https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json";
 
-var section = document.querySelector('section');
-console.log("section", section);
-
-console.log("loadimagesmetXHR");
-var request = new XMLHttpRequest();
-request.open('get', uri);
-request.responseType = 'json';
-request.send();
-
-request.addEventListener("load", function () {
-    var data = request.response;
-    console.log("request is geladen: ", request.response);
 
 
-    //er is data
-    //nu kun je iets doen
-    section.textContent = JSON.stringify(data);
+fetch(uri)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (myJson) {
+        console.log(myJson);
+        console.log(myJson.length);
+        jsonInHtml(myJson);
+    });
 
-});
+function jsonInHtml(myJson) {
 
 
+    for (i = 0; i < myJson.length; i++) {
+
+        var createArticle = document.createElement('article');
+        //selecteert de plek waar de aricle wordt gecreëerd en met appenChild geef je aan dat dit een child wordt van de plek
+        document.querySelector('main section').appendChild(createArticle);
 
 
+        //creëert plaatje + de source in de article
+        var createImage = document.createElement('img');
+        createArticle.appendChild(createImage);
+        createImage.src = myJson[i].cover;
 
 
-//data.genres
-//data[0]['genres'][0]
+        //creëert titel in de article
+        var createTitel = document.createElement('h2');
+        createArticle.appendChild(createTitel);
+        createTitel.innerHTML = myJson[i].title;
+
+
+        //creëert footer in de article
+        var createFooter = document.createElement('footer');
+        createArticle.appendChild(createFooter);
+
+        //creëert een p in de footer binnen de article voor de genres
+        var createP = document.createElement('p');
+        createFooter.appendChild(createP);
+        createP.innerHTML = myJson[i].genres;
+
+        //creëert een p in de footer binnen de article voor de rating
+        var createP2 = document.createElement('p');
+        createFooter.appendChild(createP2);
+        createP2.innerHTML = myJson[i].reviews[i].score;
+
+
+    }
+
+}

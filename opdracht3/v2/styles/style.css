@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Voltaire&display=swap');
+/*  Barlow Condensed  */
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+/*  Open Sans   */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #e50914;
+    font-family: 'Voltaire', sans-serif;
+    font-size: 3rem;
+    font-weight: inherit;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a {
+    color: inherit;
+    font-size: 0.8rem;
+    font-weight: inherit;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+header {
+    width: 100%
+}
+
+header a h1 {
+    margin: 0.5rem 0;
+}
+
+header div button {
+    margin-left: -4.5px;
+    padding: 0.5rem;
+    text-align: center;
+    display: inline-block;
+    width: calc(100%/7);
+}
+
+header div button:nth-child(1) {
+    margin-left: 0;
+}
+
+
+main {
+    padding: 0 1rem;
+}
+
+form {
+    width: 100%;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-gap: 1rem;
+    margin: 1rem 0 0 0;
+}
+
+article {
+    background: #222;
+    display: inline-block;
+    width: 1fr;
+    padding: 1rem;
+}
+
+article video {
+    height: 30rem;
+    width: 100%;
+}
+
+article img {
+    height: 30rem;
+    margin-top: -30rem;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+}
+
+/*
+article video {
+    width: 100%;
+    height: calc((width / 100 * 40)%);
+}
+*/
+
+/*
+article img {
+    height: calc((width / 100 * 40)%);
+    margin-top: calc(-(width / 100 * 40)%);
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+}
+*/
+
+article h2 {
+    text-align: center;
+}
+
+article footer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+article p:nth-child(2) {
+    float: right;
+}
+
+
+@media (min-width: 40rem) {
+
+    header a h1 {
+        margin: 5rem 0;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+        grid-gap: 1rem;
+        margin: 4rem 0 0 0;
+    }
+}

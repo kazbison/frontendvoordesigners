@@ -21,7 +21,6 @@ function jsonInHtml(myJson) {
         //selecteert de plek waar de aricle wordt gecreëerd en met appenChild geef je aan dat dit een child wordt van de plek
         document.querySelector('main section').appendChild(createArticle);
 
-
         /*   Alle content in overzicht   */
 
 

@@ -24,48 +24,45 @@ function jsonInHtml(myJson) {
 
         /*   Alle content in overzicht   */
 
-        //creëert video tag + de source in de video tag
+
+        // creëert video tag + de source in de video tag
         var createVideo = document.createElement('video');
         createArticle.appendChild(createVideo);
         createVideo.src = myJson[i].trailer;
-        createVideo.setAttribute("controls", "controls");
-        createVideo.onmouseover = function () {
-            this.play();
-        };
-        // als je je muis van een afbeelding af haalt komt de afbeelding terug
-        createVideo.onmouseout = function () {
-            this.pause();
-        };
+//        createVideo.setAttribute("controls", "controls");
 
 
-        //creëert img tag + de source in de img tag
+        // creëert img tag + de source in de img tag
         var createImage = document.createElement('img');
         createArticle.appendChild(createImage);
         createImage.src = myJson[i].cover;
         // als je je muis boven een afbeeldingen houd verdwijnt de afbeelding
-        createImage.onmouseover = function () {
-            this.style.visibility = 'hidden';
+        createArticle.onmouseover = function () {
+            console.log(this.childNodes);
+            this.childNodes[1].style.visibility = 'hidden';
+            this.childNodes[0].play();
         };
         // als je je muis van een afbeelding af haalt komt de afbeelding terug
-        createImage.onmouseout = function () {
-            this.style.visibility = 'visible';
+        createArticle.onmouseout = function () {
+            this.childNodes[1].style.visibility = 'visible';
+            this.childNodes[0].pause();
         };
 
-        //creëert titel in de article
+        // creëert titel in de article
         var createTitel = document.createElement('h2');
         createArticle.appendChild(createTitel);
         createTitel.innerHTML = myJson[i].title;
 
-        //creëert footer in de article
+        // creëert footer in de article
         var createFooter = document.createElement('footer');
         createArticle.appendChild(createFooter);
 
-        //creëert een p in de footer binnen de article voor de genres
+        // creëert een p in de footer binnen de article voor de genres
         var createP = document.createElement('p');
         createFooter.appendChild(createP);
         createP.innerHTML = myJson[i].genres;
 
-        //creëert een p in de footer binnen de article voor de rating
+        // creëert een p in de footer binnen de article voor de rating
         var createP2 = document.createElement('p');
         createFooter.appendChild(createP2);
         createP2.innerHTML = myJson[i].reviews[i].score;

@@ -10,15 +10,14 @@ Klik op een film om meer details te zien.
 
 
 # Links naar demo's
-[Versie 1](https://koopreynders.github.io/frontendvoordesigners/opdracht3/XMLHttpRequest/)
-[Versie 2](https://koopreynders.github.io/frontendvoordesigners/opdracht3/XMLHttpRequest/)
-[Eindresultaat](https://koopreynders.github.io/frontendvoordesigners/opdracht3/XMLHttpRequest/)
+[Versie 1](https://kazbison.github.io/frontendvoordesigners/opdracht3/v1/)
+[Versie 2](https://kazbison.github.io/frontendvoordesigners/opdracht3/v1/)
+[Eindresultaat](https://kazbison.github.io/frontendvoordesigners/opdracht3/v3/)
 
 
 # opdracht 3 usability test
 
-
-
+![Testpersoon](images/testpersoon.jpeg "Testpersoon")
 
 Uit de test ben ik er achter gekomen dat de site goed werkt. Het enige punt was dat de beschrijving miste. Ze lieten allebei weten vaak de beschrijving te lezen en maar een kort deel van de trailer te kijken. Als je de hele trailer hebt gezien heb je al een groot deel van de interessante scenes gezien.
 
@@ -26,4 +25,5 @@ Uit de test ben ik er achter gekomen dat de site goed werkt. Het enige punt was 
 
 Beschrijving van de film toevoegen.
 
-Daarnaast heb ik ook in plaats van alle acteurs te tonen ervoot gekozen alleen de eerste drie acteurs te tonen. De eerst genoemde acteurs zijn altijd de bekende acteurs.
+Daarnaast heb ik ook in plaats van alle acteurs te tonen ervoot gekozen alleen de eerste drie acteurs te tonen. De eerst genoemde acteurs zijn altijd de bekende acteurs. En ik heb de balk met genres verwijderd, omdat het me niet gelukt was een filter te maken in mijn javascript.
+

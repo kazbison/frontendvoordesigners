@@ -2,11 +2,9 @@
 
 ## Zoek een film die bij je past
 
-Voor opdracht 3 heb ik een site gemaakt met films. Hier kun je zoeken naar een film die je zin hebt om die avond te gaan kijken.
+Voor opdracht 3 heb ik een site gemaakt met een lijst aan films. Hier kun je zoeken naar een film als je niet welke film je die avond wilt zien.
 
-Als je de muis boven een film houd begint de trailer af te spelen. Als je muis weghaalt pauzeert de trailer. Als je je muis weer boven dezelfde film houd begint de trailer af te spelen op het punt waar je was gebleven.
-
-Klik op een film om meer details te zien.
+Als je de muis boven een film houdt begint de trailer af te spelen. Als je muis weghaalt pauzeert de trailer. Als je je muis weer boven dezelfde film houd begint de trailer af te spelen op het punt waar je was gebleven. Klik op de trailer om de trailer in fullscreen te zien.
 
 
 # Links naar demo's

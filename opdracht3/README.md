@@ -21,7 +21,7 @@ Klik op een film om meer details te zien.
 
 ![Testpersoon](testpersoon.jpg "Testpersoon")
 
-Uit de test ben ik er achter gekomen dat de site goed werkt. Het enige punt was dat de beschrijving miste. Ze lietweten vaak de beschrijving te lezen en maar een kort deel van de trailer te kijken. Als je de hele trailer hebt gezien heb je al een groot deel van de interessante scènes gezien.
+Uit de test ben ik er achter gekomen dat de site goed werkt. Het enige punt was dat de beschrijving miste. Ze liet weten vaak de beschrijving te lezen en maar een kort deel van de trailer te kijken. Als je de hele trailer hebt gezien heb je al een groot deel van de interessante scènes gezien.
 
 ## Conclusie uit de test
 

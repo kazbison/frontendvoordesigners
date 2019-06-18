@@ -2,6 +2,101 @@ var uri = "https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/m
 
 
 
+function jsonInHtml(myJson) {
+
+
+    // de articles in de section
+    for (i = 0; i < myJson.length; i++) {
+
+
+
+        var createArticle = document.createElement('article');
+        var createVideo = document.createElement('video');
+        var createImage = document.createElement('img');
+        var createTitel = document.createElement('h2');
+        var createGenres = document.createElement('p');
+        var createReviewScore = document.createElement('p');
+        var createActors = document.createElement('p');
+
+
+
+        // locaties waar de HTML aan wordt gemaakt
+        document.querySelector('main section').appendChild(createArticle);
+        createArticle.appendChild(createVideo);
+        createArticle.appendChild(createImage);
+        createArticle.appendChild(createTitel);
+        createArticle.appendChild(createGenres);
+        createArticle.appendChild(createReviewScore);
+        createArticle.appendChild(createReviewScore);
+        createArticle.appendChild(createActors);
+
+
+        /* interactie 1 */
+
+        // haalt afbeelding weg zodra je met je muis boven de article bent en start de trailer
+        createArticle.onmouseover = function () {
+            // console.log(this.childNodes);
+            this.childNodes[1].style.visibility = 'hidden';
+            this.childNodes[0].play();
+        };
+        // zorgt ervoor dat afbeelding weer terug komt zodra je muis niet meer boven de article is en de trailer pauzeert
+        createArticle.onmouseout = function () {
+            this.childNodes[1].style.visibility = 'visible';
+            this.childNodes[0].pause();
+        };
+
+
+
+        // zet JSON in de aangemaakte HTML
+        createVideo.src = myJson[i].trailer;
+        createImage.src = myJson[i].cover;
+        createTitel.innerHTML = myJson[i].title;
+        createGenres.innerHTML = myJson[i].genres;
+        createReviewScore.innerHTML = myJson[i].reviews[i].score;
+
+
+
+        // Acteurs
+        var namesOfActors = [];
+        for (var a = 0; a < myJson[i].actors.length; a++) {
+            namesOfActors.push(myJson[i].actors[a].actor_name);
+            //            console.log(myJson[i].actors[a].actor_name);
+        }
+        var string = namesOfActors.join(',  ');
+        createActors.innerHTML = (namesOfActors, string);
+
+
+        /* interactie 2 */
+
+        // opent de trailer fullscreen
+        createArticle.childNodes[0].onclick = function () {
+            this.requestFullscreen();
+        };
+    }
+}
+
+
+
+// themesongs achter knoppen
+document.addEventListener('keydown', function (e) {
+
+    var batmanThemeSong = new Audio("./sounds/batman.mp3");
+    var godfather = new Audio("./sounds/godfather.mp3");
+
+    if (e.keyCode == 66) {
+
+        batmanThemeSong.play();
+
+    } else if (e.keyCode == 71) {
+
+        godfather.play();
+
+    }
+});
+
+
+
+// haalt JSON op
 fetch(uri)
     .then(function (response) {
         return response.json();
@@ -11,93 +106,3 @@ fetch(uri)
         console.log(myJson.length);
         jsonInHtml(myJson);
     });
-
-function jsonInHtml(myJson) {
-
-
-    for (i = 0; i < myJson.length; i++) {
-
-        var createArticle = document.createElement('article');
-        //selecteert de plek waar de aricle wordt gecreëerd en met appenChild geef je aan dat dit een child wordt van de plek
-        document.querySelector('main section').appendChild(createArticle);
-
-
-        /*   Alle content in overzicht   */
-
-
-        // creëert video tag + de source in de video tag
-        var createVideo = document.createElement('video');
-        createArticle.appendChild(createVideo);
-        createVideo.src = myJson[i].trailer;
-//        createVideo.setAttribute("controls", "controls");
-
-
-        // creëert img tag + de source in de img tag
-        var createImage = document.createElement('img');
-        createArticle.appendChild(createImage);
-        createImage.src = myJson[i].cover;
-        // als je je muis boven een afbeeldingen houd verdwijnt de afbeelding
-        createArticle.onmouseover = function () {
-            console.log(this.childNodes);
-            this.childNodes[1].style.visibility = 'hidden';
-            this.childNodes[0].play();
-        };
-        // als je je muis van een afbeelding af haalt komt de afbeelding terug
-        createArticle.onmouseout = function () {
-            this.childNodes[1].style.visibility = 'visible';
-            this.childNodes[0].pause();
-        };
-
-        // creëert titel in de article
-        var createTitel = document.createElement('h2');
-        createArticle.appendChild(createTitel);
-        createTitel.innerHTML = myJson[i].title;
-
-        // creëert footer in de article
-        var createFooter = document.createElement('footer');
-        createArticle.appendChild(createFooter);
-
-        // creëert een p in de footer binnen de article voor de genres
-        var createP = document.createElement('p');
-        createFooter.appendChild(createP);
-        createP.innerHTML = myJson[i].genres;
-
-        // creëert een p in de footer binnen de article voor de rating
-        var createP2 = document.createElement('p');
-        createFooter.appendChild(createP2);
-        createP2.innerHTML = myJson[i].reviews[i].score;
-
-
-        /*   Alle content die getoond wordt als op de article wordt geklikt en het hierdoor de class "show_details" heeft gekregen   */
-
-
-    }
-}
-
-//function isDramaFilm(value) {
-//
-//
-//    return value === "drama";
-//
-//
-//}
-
-//button.addEventListener("click", function (value) {
-//
-//    var filtered = myJson.filter(isDramaFilm);
-//
-//}, false);
-
-
-
-
-//article.addEventListener("mouseover", function () {
-//
-//    /*   Bron: https://codeburst.io/learn-understand-javascripts-filter-function-bde87bce206   */
-//    let cities = data.filter(val => {
-//        return val.population > 500000000;
-//    });
-//
-//
-//
-//}, false);

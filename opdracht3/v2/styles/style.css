@@ -1,8 +1,9 @@
+/* Voltaire */
 @import url('https://fonts.googleapis.com/css?family=Voltaire&display=swap');
-/*  Barlow Condensed  */
+/* Barlow Condensed */
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
-/*  Open Sans   */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+/* Open Sans */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
 
 * {
     margin: 0;
@@ -45,6 +46,7 @@ header a h1 {
 }
 
 header div button {
+    cursor: pointer;
     margin-left: -4.5px;
     padding: 0.5rem;
     text-align: center;
@@ -59,10 +61,6 @@ header div button:nth-child(1) {
 
 main {
     padding: 0 1rem;
-}
-
-form {
-    width: 100%;
 }
 
 section {
@@ -80,48 +78,43 @@ article {
 }
 
 article video {
+    cursor: pointer;
     height: 30rem;
-    width: 100%;
+    margin-left: -1rem;
+    width: calc(100% + (1rem * 2));
 }
 
 article img {
     height: 30rem;
-    margin-top: -30rem;
+    margin-left: -1rem;
+    margin-top: -31rem;
     object-fit: cover;
     position: relative;
-    width: 100%;
+    width: calc(100% + (1rem * 2));
 }
-
-/*
-article video {
-    width: 100%;
-    height: calc((width / 100 * 40)%);
-}
-*/
-
-/*
-article img {
-    height: calc((width / 100 * 40)%);
-    margin-top: calc(-(width / 100 * 40)%);
-    object-fit: cover;
-    position: relative;
-    width: 100%;
-}
-*/
 
 article h2 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
     text-align: center;
 }
 
-article footer {
-    display: flex;
-    justify-content: flex-start;
+article p {
+    color: #B4B4B4;
+    margin: 1rem 0 0 0;
 }
 
-article p:nth-child(2) {
+article p:nth-of-type(2) {
+    position: relative;
+    margin-top: -1.4rem;
     float: right;
 }
 
+.hide {
+    visibility: hidden;
+}
 
 @media (min-width: 40rem) {
 

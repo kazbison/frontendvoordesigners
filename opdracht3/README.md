@@ -17,7 +17,7 @@ Klik op een film om meer details te zien.
 
 # opdracht 3 usability test
 
-![Testpersoon](images/testpersoon.jpeg "Testpersoon")
+![Testpersoon](testpersoon.jpeg "Testpersoon")
 
 Uit de test ben ik er achter gekomen dat de site goed werkt. Het enige punt was dat de beschrijving miste. Ze lieten allebei weten vaak de beschrijving te lezen en maar een kort deel van de trailer te kijken. Als je de hele trailer hebt gezien heb je al een groot deel van de interessante scenes gezien.
 

@@ -7,7 +7,7 @@ Voor opdracht 3 heb ik een site gemaakt met een lijst aan films. Hier kun je zoe
 Als je de muis boven een film houdt begint de trailer af te spelen. Als je muis weghaalt pauzeert de trailer. Als je je muis weer boven dezelfde film houd begint de trailer af te spelen op het punt waar je was gebleven. Klik op de trailer om de trailer in fullscreen te zien.
 
 
-# Links naar demo's
+## Links naar demo's
 [Versie 1](https://kazbison.github.io/frontendvoordesigners/opdracht3/v1/)
 
 [Versie 2](https://kazbison.github.io/frontendvoordesigners/opdracht3/v1/)
@@ -15,13 +15,13 @@ Als je de muis boven een film houdt begint de trailer af te spelen. Als je muis 
 [Eindresultaat](https://kazbison.github.io/frontendvoordesigners/opdracht3/v3/)
 
 
-# opdracht 3 usability test
+## opdracht 3 usability test
 
 ![Testpersoon](testpersoon.jpg "Testpersoon")
 
 Uit de test ben ik er achter gekomen dat de site goed werkt. Het enige punt was dat de beschrijving miste. Ze liet weten vaak de beschrijving te lezen en maar een kort deel van de trailer te kijken. Als je de hele trailer hebt gezien heb je al een groot deel van de interessante scènes gezien.
 
-## Conclusie uit de test
+### Conclusie uit de test
 
 Beschrijving van de film toevoegen.
 
